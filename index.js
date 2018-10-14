@@ -21,20 +21,14 @@ function destructivelyPrependDriver(name) {
     }
     
      function appendDriver(name) {
-       const drivers = ["Milo", "Otis", "Garfield"];
+      // const drivers = ["Milo", "Otis", "Garfield"];
        const copyOfDrivers = drivers.slice();
        copyOfDrivers.push(name);
        return copyOfDrivers;
      }
      
-//       it('appends a driver to the drivers array and returns a new array, leaving the drivers array unchanged', function () {
-//         expect(appendDriver("Broom")).to.have.ordered.members(["Milo", "Otis", "Garfield", "Broom"]);
 
-//         expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield"]);
-//       });
-//     });
-
-//     describe('prependDriver(name)', function () {
+      // function prependDriver(name) {
 //       it('prepends a driver to the drivers array and returns a new array, leaving the drivers array unchanged', function () {
 //         expect(prependDriver("Arnold")).to.have.ordered.members(["Arnold", "Milo", "Otis", "Garfield"]);
 
