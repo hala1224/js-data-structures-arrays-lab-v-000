@@ -21,20 +21,18 @@ function destructivelyPrependDriver(name) {
     }
     
      function appendDriver(name) {
-      // const drivers = ["Milo", "Otis", "Garfield"];
+    
        const copyOfDrivers = drivers.slice();
        copyOfDrivers.push(name);
        return copyOfDrivers;
      }
      
 
-      // function prependDriver(name) {
-//       it('prepends a driver to the drivers array and returns a new array, leaving the drivers array unchanged', function () {
-//         expect(prependDriver("Arnold")).to.have.ordered.members(["Arnold", "Milo", "Otis", "Garfield"]);
-
-//         expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield"]);
-//       });
-//     });
+      function prependDriver(name) {
+      const copyOfDrivers = drivers.slice();
+       copyOfDrivers.unshift(name);
+       return copyOfDrivers;
+      }
 
 //     describe('removeLastDriver()', function () {
 //       it('removes the last driver in the drivers array and returns a new array, leaving the drivers array unchanged', function () {
