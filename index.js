@@ -9,4 +9,14 @@ function destructivelyPrependDriver(name) {
       drivers.unshift(name);
       drivers;
 }
-      
+
+  function destructivelyRemoveLastDriver() {
+      drivers.pop(name);
+      drivers;
+      }
+    
+    function destructivelyRemoveFirstDriver() {
+      drives.shift(name);
+      drivers;
+    }
+     
