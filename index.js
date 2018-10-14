@@ -24,7 +24,7 @@ function destructivelyPrependDriver(name) {
        const drivers = ["Milo", "Otis", "Garfield"];
        const copyOfDrivers = drivers.slice();
        copyOfDrivers.push(name);
-       copyOfDrivers;
+       return copyOfDrivers;
      }
      
 //       it('appends a driver to the drivers array and returns a new array, leaving the drivers array unchanged', function () {
