@@ -36,21 +36,6 @@ function destructivelyPrependDriver(name) {
 
       function removeLastDriver() {
         const copyOfDrivers = drivers.slice();
-        copyOfDrivers.push(name);
+        copyOfDrivers.pop(name);
         return copyOfDrivers;
-//       it('removes the last driver in the drivers array and returns a new array, leaving the drivers array unchanged', function () {
-//         expect(removeLastDriver()).to.have.ordered.members(["Milo", "Otis"]);
-
-//         expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield"]);
-//       });
-//     });
-
-//     describe('removeFirstDriver()', function () {
-//       it('removes the first driver from the drivers array and returns a new array, leaving the drivers array unchanged', function () {
-//         expect(removeFirstDriver()).to.have.ordered.members(["Otis", "Garfield"]);
-
-//         expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield"]);
-//       });
-//     });
-//   });
-// });
+      }
