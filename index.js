@@ -41,6 +41,6 @@ function destructivelyPrependDriver(name) {
       }
        function removeFirstDriver() {
         const copyOfDrivers = drivers.slice();
-        copyOfDrivers.shif(name);
+        copyOfDrivers.shift(name);
         return copyOfDrivers;
       }
